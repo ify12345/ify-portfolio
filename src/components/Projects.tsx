@@ -1,10 +1,8 @@
 import * as React from 'react'
 import { FaArrowDownLong } from 'react-icons/fa6'
 import Image1 from '@/assets/images/breeza.png'
-import Image2 from '@/assets/images/fodot.png'
-import Image3 from '@/assets/images/gig.png'
-import Image4 from '@/assets/images/cloudinc.png'
-import Image5 from '@/assets/images/peak.png'
+import Image2 from '@/assets/images/ogugu.png'
+import Image3 from '@/assets/images/ma.png'
 import Image6 from '@/assets/images/cent.png'
 import GoSvg from './GoSvg'
 import { Link } from 'react-scroll'
@@ -12,10 +10,9 @@ import { Link } from 'react-scroll'
 
 const web2Projects = [
   { imgSrc: Image1, link: 'https://labreeza.com/',title:'Breeza' },
-  { imgSrc: Image2, link: 'https://www.figma.com/design/NPzTNkS28tSvoUhgfCRjGf/Fodot-Mobile-App?node-id=0-1&p=f&t=X2R1qcOnvtLXGPi7-0',title:'Fodot' },
-  { imgSrc: Image3, link: 'https://gigshark.io/',title:'GigShark' },
-  { imgSrc: Image4, link: 'https://cloudclinic.ng/',title:'CloudClinic' },
-  { imgSrc: Image5, link: 'https://www.figma.com/design/bYAdhbatFH5PYlEpDLwM9D/Peek-mobile-app?node-id=1-2&p=f&t=X2R1qcOnvtLXGPi7-0',title:'Peek' },
+  { imgSrc: Image2, link: 'https://www.ogugu.com.br/',title:'Ogugu' },
+  { imgSrc: Image3, link: 'https://www.marketassist.co/market-deals',title:'Market Assist' },
+
 
 
 ]
@@ -24,14 +21,14 @@ const web3Projects = [
 ]
 
 export default function Projects() {
-  const [selectedCategory, setSelectedCategory] = React.useState<'web2' | 'web3'>('web2')
+  const [selectedCategory, setSelectedCategory] = React.useState<'Web' | 'App'>('Web')
 
-  const handleCategoryChange = (category: 'web2' | 'web3') => {
+  const handleCategoryChange = (category: 'Web' | 'App') => {
     setSelectedCategory(category)
   }
 
   // Choose the appropriate projects based on selected category
-  const projectsToDisplay = selectedCategory === 'web2' ? web2Projects : web3Projects
+  const projectsToDisplay = selectedCategory === 'Web' ? web2Projects : web3Projects
   return (
     <div className="h-full lg:min-h-[100vh] pt-6 pb-10" id="projects">
       <div className="flex justify-between items-center px-3 lg:px-[120px]">
@@ -42,17 +39,17 @@ export default function Projects() {
       </div>
 
       <div className="flex flex-row justify-between items-center gap-[32px] px-4 lg:px-[120px] py-8">
-        <button   onClick={() => handleCategoryChange('web2')} className="flex w-full justify-center items-center p-[10px] text-white text-sm lg:text-4xl">
-          WEB2 PROJECTS
+        <button   onClick={() => handleCategoryChange('Web')} className="flex w-full justify-center items-center p-[10px] text-white text-sm lg:text-4xl">
+          WEB
         </button>
-        <button   onClick={() => handleCategoryChange('web3')} className="flex w-full justify-center items-center p-[10px] text-white text-sm lg:text-4xl">
-          WEB3 PROJECTS
+        <button   onClick={() => handleCategoryChange('App')} className="flex w-full justify-center items-center p-[10px] text-white text-sm lg:text-4xl">
+          MOBILE APP
         </button>
       </div>
 
       {/* Auto-Scrolling Section */}
       <div   className={`relative overflow-x-scroll w-full py-8 scrollbar-thin scrollbar-track-black/50 scrollbar-thumb-black ${
-          selectedCategory === 'web3' ? 'flex justify-center items-center lg:justify-start lg:items-start px-5 lg:mx-0 lg:px-[120px]' : 'px-0'
+          selectedCategory === 'App' ? 'flex justify-center items-center lg:justify-start lg:items-start px-5 lg:mx-0 lg:px-[120px]' : 'px-0'
         }`}>
         <div className="scroll-container flex items-center gap-6 animate-scroll">
           {projectsToDisplay.map((project, index) => (

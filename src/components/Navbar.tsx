@@ -32,16 +32,16 @@ export default function Navbar() {
     >
       <header className="h-24 top-0 w-full flex items-center text-white ">
         <div className="max-w-screen-2xl mx-auto px-4 lg:px-[120px] w-full flex items-center justify-between relative z-40">
-          <a href="/">
+          {/* <a href="/">
             <img src={Logo} width={220} height={58} alt="kay-bams" />
-          </a>
+          </a> */}
 
           <div className="hidden lg:flex items-center gap-[20px]">
             <button className="border border-[#55DB62] flex items-center py-[8px] px-[16px] gap-[8px] rounded-[40px]">
               <div className="bg-[#55DB62] size-[16px] rounded-full"></div>
-              <h1 className="text-[#55DB62]">Available for work</h1>
+              <h1 className="text-[#55DB62]">Available</h1>
             </button>
-            <h1 className="">Designer based in Lagos, Nigeria</h1>
+            <h1 className="">Developer</h1>
           </div>
 
           <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -85,10 +85,20 @@ export default function Navbar() {
                     <a
                       className="cursor-pointer"
                       target='_blank'
-                      href="https://docs.google.com/document/d/1JB2UpfFEdOGgvQcACjX4sm4EM0fLsXtoXZ21iT-9qEs/edit?usp=drivesdk"
+                      href=""
                       onClick={handleLinkClick}
                     >
                       My Resume
+                    </a>
+                  </li>
+                  <li className="flex items-end justify-end">
+                    <a
+                      className="cursor-pointer"
+                      target='_blank'
+                      href="https://github.com/ify12345"
+                      onClick={handleLinkClick}
+                    >
+                     GitHub
                     </a>
                   </li>
                 </ul>
@@ -99,27 +109,26 @@ export default function Navbar() {
       </header>
 
       <div className="mt-4 mx-auto w-full flex justify-center items-center flex-col px-4 lg:px-0">
-        <div className="flex flex-col max-w-[916px] pt-[50px]">
+        <div className="flex flex-col max-w-[1200px] pt-[50px]">
           <p className="text-[24px] lg:text-[64px] lg:leading-[96px] lg:-tracking-[1.5%] text-center">
-            KayBams -{' '}
+            Ifeanyi -{' '}
             <span className="text-[#A192E4]">
-              A Problem Solver & Product (UI / UX) Designer
+             
+            Frontend Engineer
             </span>
           </p>
           <p className="text-center text-sm lg:text-[24px] leading-[36px]">
-            A digital product Designer with 4 years of experience working with
-            startup founders and cross functional teams to help solve complex
-            problems in a creative way.
+          Developer creating <span className='text-[#A192E4]'>web</span> and <span className='text-[#A192E4]'>mobile</span> apps, collaborating with startup founders and teams to solve complex problems creatively.
           </p>
         </div>
 
         <a
-          href="mailto:bamidelekay@gmail.com"
+          href="mailto:nwakodoifeanyi21@gmail.com"
           className="bg-white rounded-[40px] flex gap-2 lg:gap-4 items-center lg:py-[16px] p-2 lg:px-[24px] mt-[60px]"
         >
           <IoMail color="#A192E4" size={24} />
           <p className="text-black text-sm lg:text-[24px] leading-[36px] font-[500]">
-            Bamidelekay@gmail.com
+            nwakodoifeanyi21@gmail.com
           </p>
         </a>
       </div>
