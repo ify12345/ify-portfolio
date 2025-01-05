@@ -18,9 +18,11 @@ export default function About() {
     <div className="min-h-[100vh] lg:min-h-[100vh] py-6" id="about">
       <div className="flex justify-between items-center px-3 lg:px-[120px]">
         <h1 className="text-3xl font-bold text-white">About Me👷🏽‍♂️</h1>
+        
         <Link to="experience" className=" cursor-pointer">
           <FaArrowDownLong color="white" size={40} />
         </Link>
+
       </div>
 
       <div className="flex items-center flex-col-reverse lg:flex-row  px-3 lg:px-[120px] gap-[24px] text-white xl:text-[40px] leading-[32px] xl:leading-[60px] py-10">
