@@ -2,7 +2,7 @@ import * as React from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoCloseSharp } from 'react-icons/io5'
 import { IoMail } from 'react-icons/io5'
-import Logo from '@/assets/images/logo.png'
+import resume from '@/assets/images/ifys-resume.pdf'
 import { Link } from 'react-scroll'
 
 export default function Navbar() {
@@ -84,21 +84,23 @@ export default function Navbar() {
                   <li className="flex items-end justify-end">
                     <a
                       className="cursor-pointer"
-                      target='_blank'
-                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer" // Adds security to prevent the new tab from accessing your page
+                      href={resume}// Replace this with the actual path or URL
                       onClick={handleLinkClick}
                     >
                       My Resume
                     </a>
                   </li>
+
                   <li className="flex items-end justify-end">
                     <a
                       className="cursor-pointer"
-                      target='_blank'
+                      target="_blank"
                       href="https://github.com/ify12345"
                       onClick={handleLinkClick}
                     >
-                     GitHub
+                      GitHub
                     </a>
                   </li>
                 </ul>
@@ -111,14 +113,12 @@ export default function Navbar() {
       <div className="mt-4 mx-auto w-full flex justify-center items-center flex-col px-4 lg:px-0">
         <div className="flex flex-col max-w-[1200px] pt-[50px]">
           <p className="text-[24px] lg:text-[64px] lg:leading-[96px] lg:-tracking-[1.5%] text-center">
-            Ifeanyi -{' '}
-            <span className="text-[#A192E4]">
-             
-            Frontend Engineer
-            </span>
+            Ifeanyi - <span className="text-[#A192E4]">Frontend Engineer</span>
           </p>
           <p className="text-center text-sm lg:text-[24px] leading-[36px]">
-          Developer creating <span className='text-[#A192E4]'>web</span> and <span className='text-[#A192E4]'>mobile</span> apps, collaborating with startup founders and teams to solve complex problems creatively.
+            I build accessible, pixel-perfect digital experiences for the{' '}
+            <span className="text-[#A192E4]">web</span> and{' '}
+            <span className="text-[#A192E4]">mobile</span> apps.
           </p>
         </div>
 
