@@ -87,29 +87,32 @@ export default function Projects() {
 
       {/* Auto-Scrolling Section */}
       <div
-        className={`relative overflow-x-scroll w-full py-8 scrollbar-thin scrollbar-track-black/50 scrollbar-thumb-black ${
+        className={`relative overflow-x-scroll overflow-y-hidden w-full py-8 scrollbar-thin scrollbar-track-black/50 scrollbar-thumb-black ${
           selectedCategory === 'App'
             ? 'flex justify-center items-center lg:justify-start lg:items-start px-5 lg:mx-0 lg:px-[120px]'
             : 'px-8'
         }`}
       >
-        <div className="scroll-container flex items-center gap-6 animate-scroll">
+        <div className="scroll-container flex items-center gap-20 lg:gap-6 animate-scroll w-screen">
           {projectsToDisplay.map((project, index) => (
             <a
               key={index}
               href={`${project.link}`}
               target="_blank"
-              className="relative group w-[500px]  lg:max-w-md hover:scale-105 transition-transform duration-300"
+              className="relative group w-full  lg:max-w-md hover:scale-105 transition-transform duration-300"
             >
+              <div className="relative w-[400px] lg:w-full">
               <img
                 src={project.imgSrc}
                 alt={`Project ${index + 1}`}
-                className="w-full h-auto rounded-lg shadow-md object-cover"
+                className="w-full h-full rounded-lg shadow-md object-cover"
               />
+
               <div className="absolute inset-0 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
                 <p className="text-white text-center text-sm font-normal ">
                   {`${project.overview} - Click to visit!`}
                 </p>
+              </div>
               </div>
               <div className="w-full flex justify-between pt-[24px] items-center">
                 <h2 className="text-sm lg:text-2xl font-bold text-white">
