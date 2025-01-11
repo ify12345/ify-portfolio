@@ -99,7 +99,7 @@ export default function Projects() {
               key={index}
               href={`${project.link}`}
               target="_blank"
-              className="relative group w-full max-w-xs lg:max-w-md hover:scale-105 transition-transform duration-300"
+              className="relative group w-[500px]  lg:max-w-md hover:scale-105 transition-transform duration-300"
             >
               <img
                 src={project.imgSrc}
