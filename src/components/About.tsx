@@ -13,6 +13,8 @@ import { IoLogoJavascript } from 'react-icons/io'
 import { SiTypescript, SiTailwindcss, SiNextdotjs,SiExpo } from 'react-icons/si'
 import { Link } from 'react-scroll'
 
+
+
 export default function About() {
   return (
     <div className="min-h-[100vh] lg:min-h-[100vh] py-6" id="about">
