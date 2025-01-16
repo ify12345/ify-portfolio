@@ -41,7 +41,7 @@ export default function About() {
           </p>
           <p className="text-base">
             Whether you're an entrepreneur, a small business owner, or a startup
-            founder seeking a design expert, I'm excited to embark on this
+            founder seeking a Frontend engineer, I'm excited to embark on this
             creative journey with you. Let's collaborate and bring your vision
             to life!.
           </p>
