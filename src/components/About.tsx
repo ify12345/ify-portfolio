@@ -43,6 +43,7 @@ export default function About() {
             founder seeking a Frontend engineer, I'm excited to embark on this
             creative journey with you. Let's collaborate and bring your vision
             to life!.
+            
           </p>
         </div>
         <div className="w-full lg:w-1/2 grid grid-cols-3 items-center">
