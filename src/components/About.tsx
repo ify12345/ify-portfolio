@@ -30,7 +30,7 @@ export default function About() {
         <div className="w-full lg:w-1/2 flex flex-col gap-[40px] ">
           <p className="max-w-[588px]">
             <span className="text-[#A192E4]">Hello!</span>My name is Nwakodo
-            Ifeanyi. I'm a Frontend Engineer with a deep passion for JavaScript and all things web development.
+             Ifeanyi. I'm a Frontend Engineer with a deep passion for JavaScript and all things web development.
           </p>
           <p className="text-base">
             Currently based in Lagos, Nigeria, I am a developer specializing in
