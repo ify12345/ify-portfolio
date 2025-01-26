@@ -32,12 +32,14 @@ export default function About() {
             <span className="text-[#A192E4]">Hello!</span>My name is Nwakodo
              Ifeanyi. I'm a Frontend Engineer with a deep passion for JavaScript and all things web development.
           </p>
+          
           <p className="text-base">
             Currently based in Lagos, Nigeria, I am a developer specializing in
             creating interactive user experiences. I've worked with software
             development teams and startups across health, Beauty and wellness,
             entertainment, and Ecommerce services.
           </p>
+
           <p className="text-base">
             Whether you're an entrepreneur, a small business owner, or a startup
             founder seeking a Frontend engineer, I'm excited to embark on this
