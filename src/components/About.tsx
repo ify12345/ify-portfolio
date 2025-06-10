@@ -49,7 +49,7 @@ export default function About() {
           </p>
         </div>
         <div className="w-full lg:w-1/2 grid grid-cols-3 items-center">
-          {/* Column 1 */}
+          {/* Column 1 */} 
           <div className="flex flex-col justify-center items-center gap-6">
             <FaReact size={80} color="#61DAFB" />
             <FaLaravel size={80} color="#FF2D20" />
