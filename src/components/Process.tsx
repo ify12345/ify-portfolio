@@ -26,7 +26,9 @@ export default function Process() {
               isLastItem ? 'text-[#A192E4]' : 'text-white'
             }`}
           >
+
             {title}
+            
           </p>
           <p className="text-3xl">{isOpen ? '-' : '+'}</p>
         </div>
